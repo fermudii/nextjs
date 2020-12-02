@@ -57,7 +57,22 @@ export default function Home({ data }) {
         />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>{data.recetas[0].receta}</h2>
+        <section className={utilStyles.headingMd}>
+          <p>
+            [Hello, I'm Fernando. I'm a musician that needs money in order to
+            live. I love you guys.]
+          </p>
+          <p>
+            (This is a sample website with Nextjs{" "}
+            <Link href={`/posts/ssr`}>
+              <a>come on!</a>
+            </Link>
+            <Link href={`/posts/pre-rendering`}>
+              <a> it's easy!</a>
+            </Link>
+            .)
+          </p>
+        </section>
         {/*(<ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

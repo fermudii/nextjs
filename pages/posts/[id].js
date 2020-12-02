@@ -10,10 +10,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
         <meta name="description" content="This is my login" />
-        <meta
-          property="og:description"
-          content="Esta es la descripcion estática"
-        />
+        <meta property="og:description" content={postData.title} />
         <meta
           property="og:image"
           content="https://www.akawsports.com/wp-content/uploads/2018/01/Adidas-Logo-PNG-Image.png"
